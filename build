@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker login
+docker build -t docker-compose .
+docker tag docker-compose konekto/docker-compose:latest
+docker push konekto/docker-compose:latest
